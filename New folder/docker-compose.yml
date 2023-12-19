@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+ go_env:
+ image: golang:1.17.7-alpine3.15
+ container_name: gonev
+ working_dir: /programs
+ volumes:
+    - $HOME/uzrnem/programs/go:/programs
+    command: tail -f /dev/null
